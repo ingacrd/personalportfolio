@@ -1,0 +1,474 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+:root {
+    --dark_color: #0D0027;
+    --light_color: #dddddd;
+}
+
+body {
+    background: #FFFFFF;
+    font-family:'Montserrat',"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#navbar {
+
+    height: 66px;
+    background: #0D0027;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+#logo-container {
+    position: relative;
+    height: 100%;
+    width: 15%;
+    float: left;
+}
+#menu-container {
+    position: relative;
+    height: 100%;
+    width: 85%;
+    float: right;
+}
+
+    .menu-options {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+}
+
+    a {
+        text-decoration:none;
+        color: #ffffff;
+    }
+    .menu-options a {
+
+        font-size: 15px;
+        font-style:normal;
+        text-transform:uppercase;
+    }
+
+    .menu-options ul li {
+        display: inline;
+        margin-left: 20px;
+        line-height: 21px;
+        font-weight: 700;
+        
+
+
+    }
+header img {
+    height: 56px;
+    position:absolute;
+    top: 5px;
+    left:5px;
+
+}
+.menu-options button {
+    background-color: inherit;
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+
+.fa-brands {
+    font-size: 30px;
+}
+.fa-solid { font-size:110px;}
+.iconb {
+    height: 120px;
+}
+#welcome-section {
+    height: 100vh;
+    background-color: #dddddd;
+}
+
+.banner-column1 {
+    position: relative;
+    float: left;
+    width: 55%;
+    height: inherit;
+}
+
+.banner-column2 {
+    position: relative;
+    float: right;
+    width: 45%;
+    height: inherit;
+
+
+}
+
+.inner-colum {
+    position: absolute;
+    width:90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left:10%;
+}
+
+.circular-img {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 5s linear infinite wave;
+    transition: transform 10s ease-in-out 0ms;
+    box-shadow: 15px 15px 10px var(--dark_color);
+}
+@keyframes wave {
+    25% {
+        border-radius: 60% 70% 65% 75%;
+        border: 5px solid var(--dark_color);
+    }
+
+    50% {
+        border-radius: 90% 65% 80% 60%;
+        border: 5px solid white;
+    }
+
+    75% {
+        border-radius: 60% 90% 60% 80%;
+        border: 5px solid var(--dark_color);
+    }
+
+}
+
+
+    .banner h2 {
+        font-size: 40px;
+        height: 1.5em;
+        font-family: 'Raleway';
+    }
+
+.banner h1 {
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Cascadia Code';
+    padding-bottom: 0.5em;
+}
+
+.banner p {
+    font-size: 25px;
+    padding-bottom: 30px;
+    font-family: 'Raleway';
+}
+
+.banner-logos{
+    display:inline;
+
+}
+
+.fa-brands {
+    color:#0D0027;
+}
+
+.dark-section {
+    background: #0D0027;
+    color: white;
+    width: 100%;
+    padding: 50px 0;
+
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    height: 63px;
+}
+.dark-section p, .light-section p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 138.68%;
+    text-align: justify;
+}
+
+
+.light-section {
+    width: 100%;
+    background-color: #dddddd;
+    padding: 50px 0;
+    color: #0D0027;
+}
+
+
+.skills .icons {
+    height: 80%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+
+}
+
+    .skills div div {
+        display:inline-block;
+
+    
+        
+    }
+.icon-square {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    background: linear-gradient(#9CCCF8,#544592);
+    border-radius: 20px;
+    margin: 50px 20px;
+    box-shadow: 20px 20px 10px #0D0027;
+    transition: all 0.7s ease-out;
+}
+
+    .icon-square:hover {
+        transform: scale(1.2) rotate(5deg);
+        transition: all 0.7s ease-out;
+
+    }
+.icon-square div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -50px;
+    text-align: center;
+}
+    .icon-square p {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        font-weight:bold;
+        font-size: 25px;
+        
+    }
+
+    .icon-square .fa-brands {
+        font-size: 120px;
+    }
+
+
+.projects-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    grid-gap:4rem;
+    width:100%;
+    max-width:1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project {
+    background: var(--light_color);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    border-radius:2px;
+}
+.projects-grid a {
+    box-shadow: inset 0 0 40px black;
+    transition: 0.7s ease-out;
+}
+
+    .projects-grid a:hover {
+        transition: 0.7s ease-in;
+        transform: scale(1.2);
+       
+    }
+
+
+.project-image {
+   height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+
+.projects-grid .project-title {
+    font-size: 1.1rem;
+    padding: 1.5rem 0.5rem;
+    color: black;
+    font-family: 'Cascadia Code';
+    text-align: center;
+}
+
+table {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 138.68%;
+    text-align: justify;
+}
+    table h3 {
+        font-weight: bold;
+        font-family: inherit;
+        font-size: 20px;
+    }
+table td {
+    padding: 10px;
+    vertical-align: top;
+}
+td:first-child {
+    width: 80%;
+}
+ul {
+    margin-top:20px;
+}
+ul li {
+    list-style-type: "♦";
+    padding-left:5px;
+    text-align:justify;
+}
+
+.personal {
+    height: 400px;
+}
+
+.grid-icontact {
+    display:flex;
+}
+.grid-icontact .icontact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: var(--light_color);
+    font-size:60px;
+}
+
+    .grid-icontact .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 125px;
+        width: 80vw;
+        padding: 5px;
+
+    }
+
+.desc h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+.desc p {
+    font-size: 20px;
+}
+
+@media (max-width: 1090px) {
+    .banner h1 {
+        font-size: 50px;
+    }
+    @media (max-width: 964px) {
+
+        #navbar {
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+        }
+
+        #welcome-section {
+            margin-top: 200px;
+        }
+
+        #logo-container {
+            width: 100%;
+        }
+
+        #menu-container {
+            margin: auto;
+            /*        width:100%;*/
+        }
+
+        .menu-options {
+            top: 0;
+            right: 0;
+            left: 0;
+            transform: translate(0%,0%);
+            margin: auto;
+            width: 100%;
+            text-align: center;
+
+        }
+
+        header img {
+            height: auto;
+            left: 50%;
+            transform: translate(-50%,0%);
+            top: 30px;
+        }
+
+        .circular-img {
+            width: 50%;
+        }
+        .banner h1 {
+            font-size: 50px;
+        }
+
+
+        @media (min-width: 360px) {
+
+            .menu-options a {
+                font-size: 10px;
+            }
+
+            .menu-options ul li{
+                margin-left:5px;
+            }
+            .menu-options ul {
+                margin-left: 5px;
+
+            }
+
+            .banner h1 {
+                font-size: 30px;
+            }
+
+            .banner p {
+                font-size: 20px;
+            }
+
+            .banner h2 {
+                font-size: 25px;
+            }
+
+            .circular-img {
+                width: 60%;
+            }
+        }
+    }
+
+}
+
+
